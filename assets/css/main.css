@@ -37,6 +37,7 @@ body {
 }
 
 ol, ul {
+	text-align: center;
 	list-style: none;
 }
 
@@ -86,8 +87,8 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #183026;
-		background-image: url("images/overlay.png"), url("../../images/bg2.jpeg");
+		background-color: rgba(227, 159, 29, .8);
+		background-image: url("images/overlay.png"), url("../../images/bg1.jpeg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -99,7 +100,7 @@ input, select, textarea {
 		letter-spacing: 1px;
 		color: #3a3939;
 		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
-		-webkit-text-stroke: 0.25px;
+		-webkit-text-stroke-width: 0.25px;
 	}
 
 		body.is-scroll {
@@ -126,7 +127,7 @@ input, select, textarea {
 		letter-spacing: 1px;
 		color: #3a3939;
 		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
-		-webkit-text-stroke: 0.25px;
+		-webkit-text-stroke-width: 0.25px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -163,10 +164,10 @@ input, select, textarea {
 		-webkit-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		-ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-		color: #35b88f;
-		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
+		color: #c77913;
+		text-shadow: 0 0 0.5px rgba(191, 121, 19, 0.25);
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
+		border-bottom: dotted 1px rgba(191, 121, 19, 0.5);
 	}
 
 		a:hover {
@@ -217,6 +218,10 @@ input, select, textarea {
 
 	br.clear {
 		clear: both;
+	}
+
+	.small-print {
+		font-size: 17px;
 	}
 
 /* Container */
@@ -1520,17 +1525,20 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
-
+	.flower {
+		width: 12rem;
+		height: 12rem;
+	}
 /* List */
 
 	ul {
-		list-style: disc;
-		padding-left: 1em;
+		list-style: none;
 	}
 
 		ul li {
-			padding-left: 1.5em;
 			margin-top: 1.5em;
+			list-style: none;
+			font-weight: bold;
 		}
 
 			ul li:first-child {
@@ -1604,7 +1612,6 @@ input, select, textarea {
 			display: inline-block;
 			margin: 0 0 0 0.5em;
 			padding-left: 0;
-			margin-top: 0;
 		}
 
 			ul.actions li:first-child {
@@ -1750,7 +1757,7 @@ input, select, textarea {
 		position: relative;
 		display: inline-block;
 		border: 0;
-		background: #35b88f;
+		background: #c77913;
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		cursor: pointer;
@@ -1767,7 +1774,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #45c89f;
+			background: rgba(191, 121, 19, 0.7);
 		}
 
 		input[type="button"].style2,
@@ -1854,7 +1861,7 @@ input, select, textarea {
 				top: 0;
 				width: 50%;
 				height: 100%;
-				background: #152E33;
+				background: #c77913;
 				overflow: hidden;
 			}
 
@@ -1957,7 +1964,6 @@ input, select, textarea {
 /* Icons */
 
 	.icon {
-		text-decoration: none;
 		text-decoration: none;
 	}
 
@@ -2099,8 +2105,8 @@ input, select, textarea {
 	}
 
 		#banner .button {
-			color: #35b882;
-			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+			color: #3a3939;
+			text-shadow: 0 0 0.5px rgba(191, 121, 19, 0.25);
 		}
 
 		#banner header {
@@ -2157,13 +2163,14 @@ input, select, textarea {
 		}
 
 			#footer a:hover {
-				color: #35b88f;
-				text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
-				border-bottom-color: rgba(53, 184, 143, 0.5);
+				color: #c77913;
+				text-shadow: 0 0 0.5px rgba(191, 121, 19, 0.25);
+				border-bottom-color: rgba(192, 121, 19, 0.7);
 			}
 
 		#footer .icons {
 			padding: 0.75em 2em 0.75em 2em;
+			font-size: 1.57rem;
 			border-radius: 3em;
 			border: solid 1px #fff;
 			display: inline-block;
@@ -2265,7 +2272,7 @@ input, select, textarea {
 				transform: scaleX(-1);
 				left: 0;
 				-ms-filter: "FlipH";
-				filter: FlipH;
+				filter: "FlipH";
 			}
 
 		.poptrox-popup .closer {
@@ -2354,8 +2361,8 @@ input, select, textarea {
 		/* Basic */
 
 			body {
-				background-color: #203936;
-				background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
+				background-color: rgba(227, 159, 29, .8);
+				background-image: url("images/overlay.png"), url("../../images/bg1.jpeg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
@@ -2363,12 +2370,10 @@ input, select, textarea {
 				font-size: 14pt;
 			}
 
-			input, textarea, select {
-				font-size: 14pt;
-			}
-
 			h1, h2, h3, h4, h5, h6 {
 				line-height: 1.5em;
+			}
+		input, textarea, select {
 			}
 
 			header p {
