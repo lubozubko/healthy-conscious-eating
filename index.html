@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" type="image/png" href="assets/css/images/flower-of-life.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 	<body class="is-preload">
 	<!-- Background image by Todd Trapani on Pexels ( https://www.pexels.com/@todd-trapani-488382 ) -->
@@ -128,17 +129,19 @@
 					<h2>Contact me</h2>
 					<p>Need advise or would you like to start the program? Let me know!</p>
 				</header>
-				<form method="post" action="#">
+				<form method="post" action="assets/php/contactform.php">
 					<div class="row gtr-50">
-						<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
-						<div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" /></div>
+						<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name"></div>
+						<div class="col-6 col-12-mobile"><input type="text" class="text" name="mail" placeholder="Email"></div>
+						<div class="col-12 col-12-mobile"><input type="text" class="text" name="subject" placeholder="Subject"></div>
 						<div class="col-12">
 							<textarea name="message" placeholder="Message"></textarea>
 						</div>
-						<div class="col-12">
+						<div class="col-12 text-center">
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
+								<li><input type="submit" name="submit" value="Send Message" /></li>
 							</ul>
+							<div class="g-recaptcha" data-sitekey="6Ldsg9EUAAAAABAIYJHruZaa_B9ceRMGseDeSQVg"></div>
 						</div>
 					</div>
 				</form>
