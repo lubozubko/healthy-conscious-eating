@@ -1,5 +1,3 @@
-//Coded by Lubomir Zubko | www.zubko.co.uk
-
 <?php
 
 
